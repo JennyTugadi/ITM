@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>I'm The Map</title>
+<!--most important tag of this mobile applocation jquery and the css it contain specific purpose to do different features from application-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css" />
+<script src="jquery/jquery-1.11.1.min.js"></script>
+<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+<script src="jquery/location.js"></script>
+
+<link href='http://fonts.googleapis.com/css…' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+</head>
+<body>                 
+<!--we use that style below to organize and manage in easy way-->
+<div data-role="page" id="home" >
+<div data-role="header" data-theme="b" data-position="fixed"><h1>I'm The Map</h1>
+</div>	
+<div style="background-color:yellow;color:black;border:1px solid black;width:100%;height:100%;font-size:18px;">
+<div data-role="main" class="ui-content">	
+<div>
+<img src="images/l.jpg" style="width:100%;height:50%">
+
+</div>
+<br>
+<br>
+<!-- Together with description and the style of background and measurement-->
+<div style="background-color:yellow;color:black;width:100%;height:100%;font-size:18px;">
+<p><center><b>I'm The Map </b><center>is a mobile application
+It is easy and quick application to locate some places inside Olongapo City, Zambales.
+<br>
+<br>
+<br>
+</p>
+ <center><p>Developed by: <b>JT Production</b></p></center></div>
+ <br>
+</font>
+<a href="#page1" data-role="footer" data-theme="#ffffa0" class="ui-btn"  data-position="fixed" data-transition="pop"><center><font size="5"><marquee>Get Started </marquee></font></center></a>
+</div>
+</div>
+</div>              
+<!-- it will create a page together with background image -->
+<div data-role="page" id="page1" >
+<img src="images/joy.jpg" style="background-color:yellow;width:100%;height:50%;">
+<br>
+<br>
+<p><font size="3"><center><marquee>Choose Map in Navigation bar!</marquee></center></font></p>
+<div data-role="panel" id="panel" data-display="overlay">
+
+<ul data-role="listview" data-inset="true">
+<li data-icon="delete" ><a href="#" data-rel="close" ><font color="#FF0000">Close</font></a></li>
+</ul>
+<!-- design or style of navigation bar and the following categories are the Bank,FastFood,College and Restaurant -->
+<ul data-role="listview"  data-inset="true">
+<li><a href="#"  onclick="Bank()"><font size="3"><font color="#3090C7">Bank</font></font></a></li>
+<li><a href="#"  onclick="FastFood()"><font color="#151B54">Fast Food</font></a></li> 
+<li><a href="#"  onclick="College()"><font color="#728C00">College</font></a></li> 
+<li><a href="#"  onclick="Restaurant()"><font color="#C04000">Restaurant</font></a></li>
+<br>
+<img src="images/tru.jpg" style="width:100%;height:70%">
+
+<!-- This is the description of 4(four) maps in my mobile application -->
+__________________________
+<p style="margin-right: '6%'; margin-left: '6%'"> <center> A <font color="#3090C7"><b>Bank</font></b> is a financial intermediary
+and money creator that creates money by lending money to a borrower, thereby
+creating a corresponding deposit on the bank's balance sheet.</center></p>
+__________________________
+<p style="margin-right: '6%'; margin-left: '6%%'"><center><font color="#151B54"><b>Fast food</font></b> is the term given to <center>food
+ that is prepared and served</center> <center>very quickly, first popularized in </center> 
+1950s in the United States.</center></p>
+__________________________
+<p style="margin-right: '6%'; margin-left: '6%'"><center>A <font color="#728C00"><b>College</font></b> may be a degree-awarding
+ tertiary educational institution, a part of a collegiate university,
+ or an institution offering vocational education.</center></p>
+__________________________
+<p style="margin-right: '6%'; margin-left: '6%'"><center>A <font color="#C04000"><b>Restaurant</b></font> is a business which 
+prepares and serves food and drinks to customers in exchange for money,
+ either paid before the meal, after the meal, or with an open account.</center></p>
+__________________________
+</ul>
+</div>
+<!--design or style of the header -->
+<div data-role="header" data-theme="b" data-position="fixed"><h1>I'm The Map</h1>
+<a href="#panel" class="ui-btn ui-icon-bars ui-btn-icon-notext"></a>
+<a href="#home" class="Home()"><font size="2">Home</font></a>
+</div>
+<!--measurement of map-->
+<div id="map_canvas" style="width:100%; height:800px">
+</div>
+</form>
+<div>
+<p></p>
+<div data-role="footer" data-theme="b" data-position="fixed"><h6></font>JT Production</h6></div>	
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
